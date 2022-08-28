@@ -1,0 +1,41 @@
+
+.row-movies {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row-movies img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: ease 450ms;
+}
+
+.row-movies img:hover {
+    transform: scale(1.08);
+}
+
+.row-movies::-webkit-scrollbar {
+    display: none;
+}
+
+.row-isLarge img {
+    max-height: 250px;
+    transition: ease 450ms;
+}
+
+.row-isLarge img:hover {
+    transform: scale(1.09);
+}
+
+.row {
+    background: black;
+}
+
+.row h1 {
+    font-size: 20px;
+    color: white;
+}
